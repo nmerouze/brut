@@ -1,0 +1,63 @@
+.link {
+  color: $text-color;
+
+  &:hover {
+    color: $heading-color;
+  }
+}
+
+.blockquote {
+  border-left: 4px solid $base-color;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $heading-color;
+}
+
+.subtitle {
+  color: $text-color;
+}
+
+.btn {
+  border: 1px solid $base-color;
+  border-radius: 2px;
+  color: $text-color;
+
+  &:hover {
+    border-color: $text-color;
+    color: $heading-color;
+  }
+}
+
+.panel {
+  border: 1px solid $base-color;
+  border-radius: 4px;
+
+  &__title {
+    border-bottom: 1px solid $base-color;
+    background: lighten($base-color, 7.5%);
+  }
+
+  &__body {
+    background: lighten($base-color, 10%);
+  }
+}
+
+.table {
+  border: 1px solid $base-color;
+
+  &__cell, &__header {
+    &:not(:first-child) {
+      border-left: 1px solid $base-color;
+    }
+  }
+
+  &__header {
+    background: lighten($base-color, 7.5%);
+    color: $heading-color;
+  }
+
+  &__cell {
+    border-top: 1px solid $base-color;
+  }
+}

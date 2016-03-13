@@ -1,0 +1,29 @@
+@each $selector in h1, h2, h3, h4, h5, h6 {
+  #{$selector} {
+    @extend .#{$selector};
+  }
+}
+
+a {
+  @extend .link;
+}
+
+p {
+  @extend .paragraph;
+}
+
+blockquote {
+  @extend .blockquote;
+}
+
+ol, ul {
+  @extend .list;
+
+  li {
+    @extend .list__item;
+  }
+
+  ul, ol {
+    @extend .list__sublist;
+  }
+}

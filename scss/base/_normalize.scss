@@ -1,0 +1,19 @@
+@import "~normalize.css/normalize.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+
+  -webkit-font-smoothing: antialiased;
+}
